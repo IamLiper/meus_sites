@@ -1,0 +1,55 @@
+body {
+    height: 100vh;
+    background: url('../img/background-escola.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.central {
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 5px 5px 10px black;
+    font-size: 20px;
+}
+
+.central input{
+    height: 20px;
+    background-color: rgba(192, 192, 192, 0);
+    border-color: rgb(0, 0, 0);
+    border-style: groove;
+    border-radius: 20px;
+}
+.central input:focus{
+    background-color: rgb(153, 205, 50);
+}
+
+.central button{
+    background-color: yellowgreen;
+    border-radius: 20px;
+    border-style: groove;
+    border-color: black;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.central button:hover{
+    background-color: rgb(176, 253, 22);
+    border-radius: 20px;
+    border-style: groove;
+    border-color: black;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 1;
+    transform: translateY(-2px);
+}
