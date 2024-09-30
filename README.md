@@ -11,4 +11,8 @@ Aqui vão ficar todos os meus sites.
 <br>
 <a href='https://iamliper.github.io/meus_sites/aulas-de-html-css-js/aula05/' target='_blank'>Site Relógio </a>
 <br>
+<a href='https://iamliper.github.io/meus_sites/aulas-de-html-css-js/aula06/' target='_blank'>Site Calendário </a>
+<br>
+<a href='https://iamliper.github.io/meus_sites/aulas-de-html-css-js/aula07/' target='_blank'>Site Nota Escolares </a>
+<br>
 <a href='https://iamliper.github.io/meus_sites/site_kimetsu_no_yaiba/' target='_blank'>Site Kimetsu No Yaiba </a>
