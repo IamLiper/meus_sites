@@ -7,8 +7,8 @@ Aqui vão ficar todos os meus sites.
 <br>
 <a href='https://iamliper.github.io/meus_sites/aulas-de-html-css-js/aula03/lampada/' target='_blank'>Site Lampada </a>
 <br>
-<a href='https://iamliper.github.io/meus_sites/aulas-de-html-css-js/aula04/divertidamente/' target='_blank'>Site Lampada </a>
+<a href='https://iamliper.github.io/meus_sites/aulas-de-html-css-js/aula04/divertidamente/' target='_blank'>Site Divertidamente </a>
 <br>
-<a href='https://iamliper.github.io/meus_sites/aulas-de-html-css-js/aula05/' target='_blank'>Site Lampada </a>
+<a href='https://iamliper.github.io/meus_sites/aulas-de-html-css-js/aula05/' target='_blank'>Site Relógio </a>
 <br>
 <a href='https://iamliper.github.io/meus_sites/site_kimetsu_no_yaiba/' target='_blank'>Site Kimetsu No Yaiba </a>
