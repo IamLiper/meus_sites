@@ -15,4 +15,6 @@ Aqui vão ficar todos os meus sites.
 <br>
 <a href='https://iamliper.github.io/meus_sites/aulas-de-html-css-js/aula07/' target='_blank'>Site Nota Escolares </a>
 <br>
+<a href='https://iamliper.github.io/meus_sites/aulas-de-html-css-js/aula08/' target='_blank'>Site Calculo De Preço</a>
+<br>
 <a href='https://iamliper.github.io/meus_sites/site_kimetsu_no_yaiba/' target='_blank'>Site Kimetsu No Yaiba </a>
