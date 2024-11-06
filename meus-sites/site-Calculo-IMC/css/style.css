@@ -1,0 +1,50 @@
+body{
+    height: 100vh;
+    background-color: rgb(17, 15, 15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span{
+    color: aliceblue;
+    font-size: 12px;
+}
+
+input{
+    background-color: rgb(32, 32, 32);
+    color: aliceblue;
+}
+
+::placeholder{
+    color: white;
+}
+
+.central{
+    background-color: black;
+    width: 250px;
+    border-radius: 20px;
+    border-style: groove;
+    border-color: aliceblue;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#botao{
+    background-color: green;
+    color: antiquewhite;
+    width: 100px;
+    border-radius: 20px;
+}
+
+
+#tema{
+    color: aliceblue;
+    padding: 20px;
+}
+
+#resultado{
+    display: flex;
+}

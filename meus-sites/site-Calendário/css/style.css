@@ -1,0 +1,68 @@
+body {
+    height: 98vh;
+    background: url('../imgs/background-body.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(0, 0, 52);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mensagem {
+    color: rgba(255, 255, 255, 0.946);
+    width: 200px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border-style: groove;
+}
+
+.calendario {
+    background-color: none;
+    color: rgb(241, 237, 237);
+    border-radius: 20px;
+    border-style: groove;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendario span {
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.relogio {
+    width: 300px;
+    border-radius: 20px;
+    border-style: groove;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.relogio div{
+    width: 120px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relogio span{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#alvo {
+    width: 100px;
+}
