@@ -1,7 +1,7 @@
 # meus_sites
 Aqui vão ficar todos os meus sites.
 
-<a href="https://iamliper.github.io/meus_sites/aulas-de-html-css-js/aula01/" target="_blank">Site Jiu-Jitsu</a>
+<a href="https://iamliper.github.io/meus_sites/meus-sites/site-Jiu-Jitsu/" target="_blank">Site Jiu-Jitsu</a>
 <br>
 <a href='https://iamliper.github.io/meus_sites/aulas-de-html-css-js/aula02/Red_Dead_Redemption_2/' target="_blank">Site Red Dead Redemption 2</a>
 <br>
