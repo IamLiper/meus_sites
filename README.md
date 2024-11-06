@@ -3,7 +3,7 @@ Aqui vão ficar todos os meus sites.
 
 <a href="https://iamliper.github.io/meus_sites/meus-sites/site-Jiu-Jitsu/" target="_blank">Site Jiu-Jitsu</a>
 <br>
-<a href='https://iamliper.github.io/meus_sites/meus-sites/Red-Dead-Redemptio-2/' target="_blank">Site Red Dead Redemption 2</a>
+<a href='https://iamliper.github.io/meus_sites/meus-sites/site-Red-Dead-Redemptio-2/' target="_blank">Site Red Dead Redemption 2</a>
 <br>
 <a href='https://iamliper.github.io/meus_sites/meus-sites/site-Lampada/' target="_blank">Site Lampada </a>
 <br>
