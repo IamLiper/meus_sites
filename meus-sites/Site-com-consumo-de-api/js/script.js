@@ -16,8 +16,12 @@ bt.addEventListener('click', buscar)
 async function buscar(){
     nome_cidade = cdd.value
 
-    const dados = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${nome_cidade}&appid=${chave}&units=metric&lang=br`)
+    const dados = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${nome_cidade}&appid=${chave}&units=metric&lang=pt_br`)
     .then(resposta=>resposta.json())
+
+    text_cdd.textContent = `Tempo em ${dados.name}`
+    temperatura.textContent = `Temperatura: ${Math.round(dados.main.temp)}°C`
+    previsao.textContent = `Previsão: ${dados.weather[0].description}`
 
     console.log(dados)
 }

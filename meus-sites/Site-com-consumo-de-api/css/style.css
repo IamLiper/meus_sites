@@ -16,6 +16,15 @@ body {
   background-size: cover;
 }
 
+h1{
+  color: rgba(230, 230, 230, 0.841);
+  margin: 20px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .caixa-maior {
   background: rgba(0, 0, 0, 0.801);
   /* opacity: 0.8; */
