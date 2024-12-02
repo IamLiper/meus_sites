@@ -1,0 +1,27 @@
+body{
+    height: 100vh;
+    background: url('/img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.sonic{
+    width: 100px;
+    position: absolute;
+    left: 0;
+    top: 600px;
+    animation: correr 2s infinite;
+}
+
+@keyframes correr {
+    0%{
+        left: 0;
+        top: 600px;
+    }
+    100%{
+        left: 100%;
+        top: 550px;
+        scale: 200%;
+    }
+}
