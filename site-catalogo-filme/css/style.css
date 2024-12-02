@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    /* MUDAR AS CORES */
+    background-color: rgb(26, 75, 238);
+    color: beige;
+    padding: 10px;
+
+}
+
+form{
+    /* ESTILOS DA PESQUISA */
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    display: flex;
+
+}
+
+form input{
+    /* ESTILO DO INPUT DA PESQUISA */
+    padding: 5px;
+    border: none;
+    outline: none; /*TIRA A BORDA DO INPUT*/
+    flex: 1;
+    
+
+}
+
+form button {
+    padding: 5px 10px;
+    background-color: rgb(26, 75, 238);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: blue;
+
+}
+
+.lista{
+    margin-top: 10px;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item{
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    border: 2px solid rgb(26, 75, 238);
+    border-radius: 5px;
+    margin: 5px;
+
+}
+
+.item:hover{
+    background-color: rgb(26, 75, 238);
+    cursor: pointer;
+}
+.item img{
+    width: 100%;
+}
