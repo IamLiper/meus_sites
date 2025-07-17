@@ -1,0 +1,229 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  background-color: #fff5f8;
+  color: #333;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  background-color: #ffb6c1;
+  padding: 15px 20px;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 10px;
+}
+
+.topbar h1 {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  min-height: 80vh;
+}
+
+aside#menu {
+  width: 220px;
+  background-color: #ffe4ec;
+  padding: 20px;
+  border-radius: 15px;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+aside#menu.escondido {
+  transform: translateX(-250px);
+  position: absolute;
+  z-index: 1;
+}
+
+aside#menu h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #d6336c;
+}
+
+main#conteudo {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  min-height: 300px;
+}
+
+/* 🌸 Classe padrão para todos os botões */
+button.btn {
+  background-color: #f06292;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 10px 5px 10px 0;
+  font-size: 1rem;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(240, 98, 146, 0.3);
+  font-family: 'Georgia', serif;
+  animation: pulse 0.8s ease-in-out both;
+}
+
+button.btn:hover {
+  background-color: #ff80ab;
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(255, 128, 171, 0.5);
+}
+
+@keyframes pulse {
+  0% { transform: scale(0.98); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+/* Estilo para botão de voltar */
+button.voltar {
+  background-color: #b39ddb;
+  box-shadow: 0 4px 10px rgba(179, 157, 219, 0.3);
+}
+
+button.voltar:hover {
+  background-color: #9575cd;
+  box-shadow: 0 6px 14px rgba(179, 157, 219, 0.5);
+}
+
+/* Botão de troca de tema */
+button.tema {
+  background-color: #4db6ac;
+  box-shadow: 0 4px 10px rgba(77, 182, 172, 0.3);
+  margin-top: 10px;
+}
+
+button.tema:hover {
+  background-color: #26a69a;
+  box-shadow: 0 6px 14px rgba(77, 182, 172, 0.5);
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  font-style: italic;
+  color: #999;
+}
+
+/* 🌙 Modo noturno */
+body.dark-mode {
+  background-color: #1e1e2f;
+  color: #f0f0f0;
+}
+
+body.dark-mode .topbar {
+  background-color: #333;
+}
+
+body.dark-mode aside#menu {
+  background-color: #2c2c3c;
+}
+
+body.dark-mode main#conteudo {
+  background-color: #1e1e2f;
+}
+
+body.dark-mode button.btn {
+  background: #8e44ad;
+  box-shadow: 0 4px 10px rgba(142, 68, 173, 0.3);
+}
+
+body.dark-mode button.btn:hover {
+  background: #9b59b6;
+  box-shadow: 0 6px 14px rgba(155, 89, 182, 0.5);
+}
+
+body.dark-mode button.voltar {
+  background-color: #7e57c2;
+  box-shadow: 0 4px 10px rgba(126, 87, 194, 0.3);
+}
+
+body.dark-mode button.voltar:hover {
+  background-color: #673ab7;
+  box-shadow: 0 6px 14px rgba(103, 58, 183, 0.5);
+}
+
+body.dark-mode button.tema {
+  background-color: #009688;
+  box-shadow: 0 4px 10px rgba(0, 150, 136, 0.3);
+}
+
+body.dark-mode button.tema:hover {
+  background-color: #00796b;
+  box-shadow: 0 6px 14px rgba(0, 121, 107, 0.5);
+}
+
+body.dark-mode footer {
+  color: #aaa;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    min-height: unset;
+  }
+
+  aside#menu {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    position: static;
+    transform: none !important;
+    z-index: 2;
+  }
+
+  aside#menu.escondido {
+    display: none;
+    transform: none;
+  }
+
+  main#conteudo {
+    padding: 10px;
+    border-radius: 15px;
+    min-height: 200px;
+  }
+}
+
+@media (max-width: 500px) {
+  .topbar {
+    flex-direction: column;
+    padding: 10px 5px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .topbar h1 {
+    font-size: 1.1rem;
+    margin: 10px 0 0 0;
+    text-align: center;
+  }
+
+  aside#menu h2 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+  }
+
+  button.btn {
+    width: 100%;
+    font-size: 1rem;
+    margin: 8px 0;
+    padding: 12px 0;
+  }
+
+  main#conteudo {
+    padding: 5px;
+    border-radius: 10px;
+  }
+}
