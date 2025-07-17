@@ -21,6 +21,6 @@ Aqui vão ficar todos os meus sites.
 <br>
 <a href='https://iamliper.github.io/meus_sites/meus-sites/Curriculo/curriculo.html' target="_blank">Meu currículo</a>
 <br>
-<a href='https://iamliper.github.io/meus_sites/meus-sites/Livro/' target="_blank">Biblioteca da Kaila ❤</a>
+<a href='https://iamliper.github.io/meus_sites/meus-sites/Livro/main.html' target="_blank">Biblioteca da Kaila ❤</a>
 <br>
 <a href='https://iamliper.github.io/meus_sites/site_kimetsu_no_yaiba/' target="_blank">Site Kimetsu No Yaiba </a>
