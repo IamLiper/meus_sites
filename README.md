@@ -26,5 +26,3 @@ Aqui vão ficar todos os meus sites.
 <a href='https://iamliper.github.io/meus_sites/meus-sites/carta-princesa/page/' target="_blank">Carta para Princesa</a>
 <br>
 <a href='https://iamliper.github.io/meus_sites/meus-sites/carta-fabiola/' target="_blank">Carta para Fabiola</a>
-<br>
-<a href='https://iamliper.github.io/meus_sites/meus-sites/carta-jheni/' target="_blank">Carta para Jheni</a>
