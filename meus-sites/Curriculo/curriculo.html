@@ -3,54 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo - Luís Felipe</title>
+    <title>Currículo - Luís Felipe Ferreira</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.png" type="image/png">
 </head>
 <body>
-    <div class="container">
-        <h1>Luís Felipe Silva Ferreira</h1>
-        <p>📍 Salvador, BA</p>
-        <p>📞 71 996549388</p>
-        <p>📧 felipinho260206@gmail.com</p>
-        <p>💼 <a href="https://linkedin.com/in/luis-felipe-ferreira-024898287" target="_blank">LinkedIn</a></p>
+    <header>
+        <div class="header-content">
+            <img src="img/profile.jpg" alt="Foto de Perfil" class="profile-pic">
+            <div>
+                <h1>Luís Felipe Silva Ferreira</h1>
+                <p class="subtitle">Desenvolvedor em Formação • Salvador - BA</p>
+                <p>💬 “Sou um estudante de Desenvolvimento de Sistemas focado em criar soluções criativas e funcionais com Python e Web.”</p>
+            </div>
+        </div>
+    </header>
 
-        <h2>Objetivo</h2>
-        <p>Busco uma oportunidade na área de Tecnologia da Informação para aplicar e desenvolver meus conhecimentos em programação e suporte técnico.</p>
+    <main class="container">
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>📞 71 99654-9388</p>
+            <p>📧 <a href="mailto:felipinho260206@gmail.com">felipinho260206@gmail.com</a></p>
+            <p>💼 <a href="https://linkedin.com/in/luis-felipe-ferreira-024898287" target="_blank">LinkedIn</a></p>
+        </section>
 
-        <h2>Formação</h2>
-        <p>Técnico em Desenvolvimento de Sistemas - Senai Dendenzeiros (2024 - 2026)</p>
+        <section id="objetivo">
+            <h2>Objetivo</h2>
+            <p>Busco uma oportunidade na área de Tecnologia da Informação para aplicar e desenvolver meus conhecimentos em programação e suporte técnico.</p>
+        </section>
 
-        <h2>Experiência Profissional</h2>
-        <p><strong>Estagiário de TI - Shopping Center Piedade (Atualmente)</strong></p>
-        <ul>
-            <li>Suporte técnico aos usuários internos</li>
-            <li>Auxílio na manutenção de sistemas e redes</li>
-            <li>Apoio na resolução de problemas relacionados à infraestrutura de TI</li>
-        </ul>
+        <section id="formacao">
+            <h2>Formação</h2>
+            <p><strong>Técnico em Desenvolvimento de Sistemas</strong> — Senai Dendezeiros (2024 - 2026)</p>
+        </section>
 
-        <p><strong>Jovem Aprendiz - Auxiliar Administrativo - Shopping Center Piedade (2023 - 2024)</strong></p>
-        <ul>
-            <li>Atendimento ao público e suporte administrativo</li>
-            <li>Organização de documentos e arquivos</li>
-            <li>Apoio às rotinas do setor administrativo</li>
-        </ul>
+        <section id="experiencia">
+            <h2>Experiência Profissional</h2>
 
-        <h2>Habilidades</h2>
-        <p>Programação: Python, HTML, CSS, JavaScript (nível básico)</p>
-        <p>Suporte técnico e infraestrutura de TI</p>
-        <p>Organização e trabalho em equipe</p>
+            <article>
+                <h3>Estagiário de TI — Shopping Center Piedade <span class="ano">(Atualmente)</span></h3>
+                <ul>
+                    <li>Suporte técnico aos usuários internos</li>
+                    <li>Auxílio na manutenção de sistemas e redes</li>
+                    <li>Apoio na resolução de problemas relacionados à infraestrutura de TI</li>
+                </ul>
+            </article>
 
-        <h2>Projetos</h2>
-        <p><strong>Bot-Trader de Criptomoedas:</strong> Desenvolvido utilizando a API da Binance para automatizar operações de trading. Atualmente operando com os pares BTCUSDT, ETHUSDT e SOLUSDT.</p>
+            <article>
+                <h3>Jovem Aprendiz — Auxiliar Administrativo — Shopping Center Piedade <span class="ano">(2023 - 2024)</span></h3>
+                <ul>
+                    <li>Atendimento ao público e suporte administrativo</li>
+                    <li>Organização de documentos e arquivos</li>
+                    <li>Apoio às rotinas do setor administrativo</li>
+                </ul>
+            </article>
+        </section>
 
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Programação: Python, HTML, CSS e JavaScript (nível básico)</li>
+                <li>Suporte técnico e infraestrutura de TI</li>
+                <li>Organização e trabalho em equipe</li>
+            </ul>
+        </section>
+
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <p><strong>Bot-Trader de Criptomoedas:</strong> Desenvolvido utilizando a API da Binance para automatizar operações de trading. Atualmente operando com os pares BTCUSDT, ETHUSDT e SOLUSDT.</p>
+        </section>
 
         <div class="buttons">
             <button id="githubButton" class="button">Meu GitHub</button>
             <button id="sitesButton" class="button">Meus Sites</button>
-            <button id="whatsapp" class="button">Me chame no Whatsapp</button>
+            <button id="whatsapp" class="button">Chamar no WhatsApp</button>
         </div>
-    </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Luís Felipe Ferreira — Desenvolvedor</p>
+    </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
