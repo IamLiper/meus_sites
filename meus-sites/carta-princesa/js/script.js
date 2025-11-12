@@ -24,7 +24,7 @@ Amo que você curte música e tem gostos tão variados (de ${perfil.musicas.join
 Esta página é só um jeitinho de transformar em presente o que eu sinto por você. Aperte o botão colorido de novo sempre que quiser e veja, em tempo real, quanto tempo a gente já passou junto — cada segundo faz parte da nossa história.
 
 Com carinho, sempre seu.
-— Blake ❤️`;
+— Lipe ❤️`;
 }
 
 // Função para calcular a diferença de tempo
