@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa Supernatural</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body class="supernatural-theme">
+    <div class="flicker-overlay"></div>
+    <div class="smoke-bg"></div>
+
+    <div class="container">
+        <!-- TELA INICIAL -->
+        <div id="intro-screen" class="screen active">
+            <div class="pentagram-container">
+                <div class="pentagram"></div>
+            </div>
+            <h1 class="title">Continue, meu filho rebelde...</h1>
+            <p class="subtitle">Há algo nas sombras esperando por você.</p>
+            <button id="btn-reveal" class="spn-btn">EXORCIZAR O SEGREDO</button>
+        </div>
+
+        <!-- TELA DA ANIMAÇÃO DO IMPALA -->
+        <div id="impala-screen" class="screen">
+            <div class="impala-scene">
+                <div class="road"></div>
+                <div class="impala-wrapper">
+                    <svg class="impala-car" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Corpo do Impala -->
+                        <ellipse cx="100" cy="60" rx="80" ry="30" fill="#1a1a1a" stroke="#000" stroke-width="2"/>
+                        <!-- Teto -->
+                        <path d="M 40 60 Q 50 30 100 25 Q 150 30 160 60" fill="#0a0a0a" stroke="#000" stroke-width="2"/>
+                        <!-- Janelas -->
+                        <rect x="50" y="35" width="35" height="20" fill="#333" stroke="#000" stroke-width="1"/>
+                        <rect x="115" y="35" width="35" height="20" fill="#333" stroke="#000" stroke-width="1"/>
+                        <!-- Rodas -->
+                        <circle cx="50" cy="85" r="12" fill="#222" stroke="#666" stroke-width="2"/>
+                        <circle cx="150" cy="85" r="12" fill="#222" stroke="#666" stroke-width="2"/>
+                        <!-- Detalhes de rodas -->
+                        <circle cx="50" cy="85" r="8" fill="none" stroke="#888" stroke-width="1"/>
+                        <circle cx="150" cy="85" r="8" fill="none" stroke="#888" stroke-width="1"/>
+                        <!-- Faróis acesos -->
+                        <circle cx="25" cy="55" r="6" fill="#ffffaa" class="headlight-glow"/>
+                        <circle cx="25" cy="55" r="3" fill="#ffffff"/>
+                    </svg>
+                </div>
+                <p class="impala-text">O Baby está a caminho...</p>
+            </div>
+        </div>
+
+        <!-- TELA DA CARTA -->
+        <div id="letter-screen" class="screen">
+            <div class="journal-container">
+                <div class="journal-page">
+                    <div class="journal-content">
+                        <h2 class="journal-title">O Diário de Caçador</h2>
+                        <div class="journal-text">
+                            <p><strong>Entrada #2026:</strong> Encontrei algo especial que não está nos livros de monstros.</p>
+                            <p>Eu sei que você gosta de caçar aventuras comigo. Aqui estão algumas das coisas que tornam o nosso mundo menos sombrio:</p>
+                            <ul id="likes-list">
+                                <li>Seu sorriso que afasta qualquer demônio.</li>
+                                <li>Nossas maratonas de séries (especialmente as de terror).</li>
+                                <li>O jeito que você me faz sentir mais seguro que um círculo de sal.</li>
+                                <li>A trilha sonora da nossa vida, sempre com um bom rock clássico.</li>
+                            </ul>
+                            <p class="closing">"Salvar pessoas, caçar coisas... amar você. O negócio da família."</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="btn-back" class="spn-btn-small">FECHAR DIÁRIO</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SONS -->
+    <audio id="audio-flicker" src="https://www.soundjay.com/electrical/sounds/electricity-hum-1.mp3"></audio>
+    <audio id="audio-engine" src="https://www.soundjay.com/mechanical/sounds/car-engine-start-1.mp3"></audio>
+    <audio id="audio-door" src="https://www.soundjay.com/mechanical/sounds/car-door-close-1.mp3"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
