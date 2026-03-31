@@ -23,4 +23,4 @@ Aqui vão ficar todos os meus sites.
 <br>
 <a href='https://iamliper.github.io/meus_sites/site_kimetsu_no_yaiba/' target="_blank">Site Kimetsu No Yaiba</a>
 <br>
-<a href='https://iamliper.github.io/meus_sites/Supernatural/' target="_blank">Site Supernatural</a>
+<a href='https://iamliper.github.io/meus_sites/meus-sites/Supernatural/' target="_blank">Site Supernatural</a>
