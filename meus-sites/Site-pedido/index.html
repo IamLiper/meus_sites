@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tenho algo pra você ❤️</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ffe4e6, #fff1f2, #ffe4e6);
+      padding: 20px;
+    }
+
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      max-width: 520px;
+      width: 100%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      color: #e11d48;
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+
+    p {
+      color: #444;
+      font-size: 18px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    button {
+      background: #e11d48;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+      background: #be123c;
+    }
+
+    .pedido {
+      margin-top: 30px;
+      display: none;
+      animation: aparecer 0.8s ease forwards;
+      background: #fff1f2;
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    .pedido h2 {
+      color: #e11d48;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .pedido p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    .emoji {
+      font-size: 28px;
+      margin-top: 10px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes aparecer {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 28px 20px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      button {
+        width: 100%;
+      }
+
+      .pedido h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Tenho algo especial pra você 💖</h1>
+
+    <p>
+      Tem algo em você que me prende de um jeito lindo...
+      Seus olhos e o seu sorriso me encantam, e cada segundo ao seu lado
+      se transforma em um momento incrível pra mim.
+    </p>
+
+    <button onclick="mostrarPedido()" id="botaoPedido">Clique aqui ❤️</button>
+
+    <div class="pedido" id="pedido">
+      <h2>Você aceita namorar comigo? 💘</h2>
+      <p>
+        Eu quero viver muitos outros momentos incríveis com você,
+        te fazer sorrir, admirar ainda mais seus olhos lindos
+        e construir algo especial ao seu lado.
+      </p>
+      <div class="emoji">🌹✨❤️</div>
+    </div>
+  </div>
+
+  <script>
+    function mostrarPedido() {
+      const pedido = document.getElementById("pedido");
+      const botao = document.getElementById("botaoPedido");
+
+      pedido.style.display = "block";
+      botao.style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
