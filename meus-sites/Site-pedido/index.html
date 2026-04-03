@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosso tempo juntos ❤️</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #ffe4e6, #fff1f2, #ffe4e6);
+      padding: 20px;
+    }
+
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      max-width: 650px;
+      width: 100%;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      color: #e11d48;
+      margin-bottom: 20px;
+      font-size: 34px;
+    }
+
+    .texto-romantico {
+      color: #444;
+      font-size: 18px;
+      line-height: 1.8;
+      margin-bottom: 30px;
+    }
+
+    .inicio {
+      background: #fff1f2;
+      color: #be123c;
+      font-size: 18px;
+      padding: 14px 18px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .contador {
+      background: linear-gradient(135deg, #fff1f2, #ffe4e6);
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: inset 0 0 10px rgba(225, 29, 72, 0.08);
+    }
+
+    .contador h2 {
+      color: #e11d48;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .tempo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .tempo-box {
+      background: white;
+      border-radius: 16px;
+      padding: 18px 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    }
+
+    .tempo-numero {
+      display: block;
+      font-size: 28px;
+      color: #be123c;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+
+    .tempo-label {
+      color: #666;
+      font-size: 15px;
+    }
+
+    .rodape {
+      margin-top: 28px;
+      font-size: 17px;
+      color: #9f1239;
+      font-weight: bold;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 28px 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .texto-romantico {
+        font-size: 16px;
+      }
+
+      .contador h2 {
+        font-size: 24px;
+      }
+
+      .tempo-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .tempo-numero {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Nosso tempo juntos ❤️</h1>
+
+    <p class="texto-romantico">
+      Seus olhos e o seu sorriso continuam me encantando todos os dias.
+      Cada segundo com você é especial, cada momento ao seu lado é incrível,
+      e ter você na minha vida faz tudo ficar mais bonito, mais leve e mais feliz.
+    </p>
+
+    <div class="inicio">
+      Início do namoro: <span id="dataInicioTexto">00:15:00</span>
+    </div>
+
+    <div class="contador">
+      <h2>Estamos juntos há:</h2>
+
+      <div class="tempo-grid">
+        <div class="tempo-box">
+          <span class="tempo-numero" id="meses">0</span>
+          <span class="tempo-label">Meses</span>
+        </div>
+
+        <div class="tempo-box">
+          <span class="tempo-numero" id="dias">0</span>
+          <span class="tempo-label">Dias</span>
+        </div>
+
+        <div class="tempo-box">
+          <span class="tempo-numero" id="horas">0</span>
+          <span class="tempo-label">Horas</span>
+        </div>
+
+        <div class="tempo-box">
+          <span class="tempo-numero" id="minutos">0</span>
+          <span class="tempo-label">Minutos</span>
+        </div>
+
+        <div class="tempo-box">
+          <span class="tempo-numero" id="segundos">0</span>
+          <span class="tempo-label">Segundos</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="rodape">✨ Cada instante com você vale a pena ✨</div>
+  </div>
+
+  <script>
+    // Altere aqui para a data real de início do namoro
+    // Formato: ANO, MÊS-1, DIA, HORA, MINUTO, SEGUNDO
+    const dataInicio = new Date(2026, 3, 3, 0, 15, 0);
+
+    function atualizarContador() {
+      const agora = new Date();
+      let diferenca = agora - dataInicio;
+
+      if (diferenca < 0) {
+        document.getElementById('meses').textContent = 0;
+        document.getElementById('dias').textContent = 0;
+        document.getElementById('horas').textContent = 0;
+        document.getElementById('minutos').textContent = 0;
+        document.getElementById('segundos').textContent = 0;
+        return;
+      }
+
+      let meses = (agora.getFullYear() - dataInicio.getFullYear()) * 12 + (agora.getMonth() - dataInicio.getMonth());
+      const ajusteData = new Date(dataInicio);
+      ajusteData.setMonth(dataInicio.getMonth() + meses);
+
+      if (agora < ajusteData) {
+        meses--;
+      }
+
+      const dataMesesCompletos = new Date(dataInicio);
+      dataMesesCompletos.setMonth(dataInicio.getMonth() + meses);
+
+      let restante = agora - dataMesesCompletos;
+
+      const dias = Math.floor(restante / (1000 * 60 * 60 * 24));
+      restante %= 1000 * 60 * 60 * 24;
+
+      const horas = Math.floor(restante / (1000 * 60 * 60));
+      restante %= 1000 * 60 * 60;
+
+      const minutos = Math.floor(restante / (1000 * 60));
+      restante %= 1000 * 60;
+
+      const segundos = Math.floor(restante / 1000);
+
+      document.getElementById('meses').textContent = meses;
+      document.getElementById('dias').textContent = dias;
+      document.getElementById('horas').textContent = horas;
+      document.getElementById('minutos').textContent = minutos;
+      document.getElementById('segundos').textContent = segundos;
+    }
+
+    atualizarContador();
+    setInterval(atualizarContador, 1000);
+  </script>
+</body>
+</html>
