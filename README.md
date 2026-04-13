@@ -19,7 +19,7 @@ Aqui vão ficar todos os meus sites.
 <br>
 <a href='https://iamliper.github.io/meus_sites/meus-sites/Site-QRCode/' target="_blank">Site QRCode</a>
 <br>
-<a href='https://iamliper.github.io/meus_sites/meus-sites/Curriculo/curriculo-luis-felipe.html' target="_blank">Meu currículo</a>
+<a href='https://iamliper.github.io/meus_sites/meus-sites/Curriculo/curriculo_luis_felipe.html' target="_blank">Meu currículo</a>
 <br>
 <a href='https://iamliper.github.io/meus_sites/site_kimetsu_no_yaiba/' target="_blank">Site Kimetsu No Yaiba</a>
 <br>
