@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo - Luís Felipe Silva Ferreira</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.95em;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            transition: border-color 0.3s;
+        }
+
+        .contact-item a:hover {
+            border-bottom: 1px solid white;
+        }
+
+        /* Main Content */
+        .content {
+            padding: 40px 30px;
+        }
+
+        .section {
+            margin-bottom: 35px;
+        }
+
+        .section h2 {
+            font-size: 1.5em;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Sobre */
+        .about-text {
+            color: #555;
+            line-height: 1.8;
+            font-size: 0.95em;
+        }
+
+        /* Experiência */
+        .experience-item {
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .experience-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+
+        .experience-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .experience-date {
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        .experience-company {
+            color: #667eea;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .experience-description {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+        }
+
+        /* Educação */
+        .education-item {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .education-item:last-child {
+            border-bottom: none;
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+
+        .education-course {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .education-year {
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        .education-school {
+            color: #667eea;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        /* Habilidades */
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-category {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 12px;
+            font-size: 1em;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            color: #555;
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+            font-size: 0.95em;
+        }
+
+        .skill-list li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        /* Projetos */
+        .project-item {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #667eea;
+        }
+
+        .project-title {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .project-description {
+            color: #666;
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .project-tech {
+            color: #667eea;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+
+        /* Links */
+        .links-container {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .link-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9em;
+            transition: background 0.3s;
+        }
+
+        .link-button:hover {
+            background: #764ba2;
+        }
+
+        /* Responsivo */
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .header p {
+                font-size: 1em;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .experience-header,
+            .education-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .experience-date,
+            .education-year {
+                margin-top: 5px;
+            }
+
+            .skills-container {
+                grid-template-columns: 1fr;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+        }
+
+        /* Impressão */
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+
+            .link-button {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>Luís Felipe Silva Ferreira</h1>
+            <p>Desenvolvedor Python | Estudante de Redes de Computadores</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    📧 <a href="mailto:luis.f.silva.ferreira.8@gmail.com">luis.f.silva.ferreira.8@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    📱 (71) 99654-9388
+                </div>
+                <div class="contact-item">
+                    📍 Salvador, BA
+                </div>
+                <div class="contact-item">
+                    🔗 <a href="https://www.linkedin.com/in/luís-felipe-silva-ferreira-024898287">LinkedIn</a>
+                </div>
+                <div class="contact-item">
+                    💻 <a href="https://github.com/IamLiper">GitHub</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Sobre -->
+            <section class="section">
+                <h2>Sobre</h2>
+                <p class="about-text">
+                    Desenvolvedor apaixonado por tecnologia com experiência prática em projetos de automação e desenvolvimento de aplicações. Atualmente cursando Redes de Computadores no SENAI CIMATEC. Dedicado a criar soluções inovadoras e eficientes, com foco em aprendizado contínuo e desenvolvimento de habilidades técnicas.
+                </p>
+            </section>
+
+            <!-- Experiência -->
+            <section class="section">
+                <h2>Experiência em Desenvolvimento</h2>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <span class="experience-title">Bot de Trading de Criptomoedas</span>
+                        <span class="experience-date">2026 - Atual</span>
+                    </div>
+                    <div class="experience-company">Projeto Pessoal</div>
+                    <div class="experience-description">
+                        Sistema automatizado que monitora mercados de criptomoedas, executa operações baseadas em estratégias definidas e fornece notificações em tempo real via Telegram. Infraestrutura hospedada em Google Cloud para garantir operação contínua e confiável.
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <span class="experience-title">App Financeiro</span>
+                        <span class="experience-date">Em Desenvolvimento</span>
+                    </div>
+                    <div class="experience-company">Projeto Pessoal</div>
+                    <div class="experience-description">
+                        Desenvolvimento de aplicação financeira com objetivo de facilitar gestão e controle de finanças pessoais. Projeto em fase de planejamento e implementação com foco em interface intuitiva e funcionalidades robustas.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Educação -->
+            <section class="section">
+                <h2>Educação</h2>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <span class="education-course">Redes de Computadores</span>
+                        <span class="education-year">2026 - Atual</span>
+                    </div>
+                    <div class="education-school">SENAI CIMATEC - Salvador, BA</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <span class="education-course">Desenvolvimento de Sistemas</span>
+                        <span class="education-year">2024 - 2025</span>
+                    </div>
+                    <div class="education-school">SENAI Dendezeiros - Salvador, BA</div>
+                    <div class="education-description" style="color: #666; font-size: 0.9em; margin-top: 5px;">Curso técnico de 2 anos com foco em desenvolvimento de software, programação e práticas de engenharia de sistemas.</div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-header">
+                        <span class="education-course">Ensino Médio Completo</span>
+                        <span class="education-year">Concluído em 2023</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Habilidades -->
+            <section class="section">
+                <h2>Habilidades Técnicas</h2>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Linguagens de Programação</h3>
+                        <ul class="skill-list">
+                            <li>Python (Intermediário)</li>
+                            <li>HTML (Básico)</li>
+                            <li>CSS (Básico)</li>
+                            <li>JavaScript (Básico)</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Ferramentas & Plataformas</h3>
+                        <ul class="skill-list">
+                            <li>Google Cloud Platform</li>
+                            <li>Telegram API</li>
+                            <li>Git & GitHub</li>
+                            <li>APIs RESTful</li>
+                        </ul>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Competências</h3>
+                        <ul class="skill-list">
+                            <li>Automação de Processos</li>
+                            <li>Desenvolvimento de Sistemas</li>
+                            <li>Resolução de Problemas</li>
+                            <li>Aprendizado Contínuo</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projetos -->
+            <section class="section">
+                <h2>Projetos Destacados</h2>
+
+                <div class="project-item">
+                    <div class="project-title">🤖 Bot de Trading de Criptomoedas</div>
+                    <div class="project-description">
+                        Sistema automatizado que monitora mercados de criptomoedas, executa operações baseadas em estratégias definidas e fornece notificações em tempo real via Telegram. Infraestrutura hospedada em Google Cloud para garantir operação contínua e confiável.
+                    </div>
+                    <div class="project-tech">Tecnologias: Python, Google Cloud, Telegram API, APIs de Criptomoedas</div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-title">💰 App Financeiro</div>
+                    <div class="project-description">
+                        Aplicação em desenvolvimento para gestão de finanças pessoais, com foco em facilitar o controle de receitas, despesas e metas financeiras. Interface intuitiva e funcionalidades robustas para melhor experiência do usuário.
+                    </div>
+                    <div class="project-tech">Tecnologias: A definir (em planejamento)</div>
+                </div>
+            </section>
+
+
+        </div>
+    </div>
+</body>
+</html>
