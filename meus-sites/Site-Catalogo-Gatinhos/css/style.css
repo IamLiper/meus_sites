@@ -1,0 +1,37 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(180deg, #fff0f6, #f3e8ff);
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #f3e8ff;
+  color: #5b3c88;
+  font-size: 20px;
+}
+
+/* animação suave ao carregar */
+body {
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 600px) {
+  header {
+    font-size: 16px;
+  }
+
+  .card {
+    padding: 8px;
+  }
+
+  .cat-container {
+    flex-direction: column;
+  }
+}

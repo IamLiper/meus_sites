@@ -1,0 +1,48 @@
+#cats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+  padding: 15px;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  animation: popIn 0.5s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px) scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.card h3 {
+  color: #7e57c2;
+  margin: 10px 0 5px;
+}
+
+.card p {
+  color: #888;
+  font-size: 14px;
+}
+
+/* animação fofinha */
+@keyframes popIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

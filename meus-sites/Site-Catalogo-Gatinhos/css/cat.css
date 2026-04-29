@@ -1,0 +1,57 @@
+.cat-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cat-container img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 20px;
+  animation: fadeIn 0.5s ease;
+}
+
+.info {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 350px;
+  width: 100%;
+  animation: slideUp 0.5s ease;
+}
+
+.info p {
+  margin: 8px 0;
+}
+
+button {
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background-color: #e1bee7;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #f8bbd0;
+  transform: scale(1.03);
+}
+
+/* animações */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
